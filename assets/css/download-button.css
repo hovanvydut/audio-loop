@@ -1,0 +1,25 @@
+.download-btn {
+    display: flex;
+    justify-content: center;
+}
+.download-btn > a {
+    display: flex;
+    padding: 10px 20px;
+    border: 1px solid var(--extra-orange);
+    background-color: var(--extra-orange);
+    border-radius: 5px;
+}
+
+.download-btn > a > img {
+    margin-right: 10px;
+}
+
+.download-btn > a > p {
+    color: white;
+    margin-bottom: 0px;
+}
+
+
+.download-btn > a > p > span {
+    font-weight: bold;
+}

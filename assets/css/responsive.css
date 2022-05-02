@@ -1,0 +1,355 @@
+/* X-Small devices (portrait phones, less than 576px) */
+/* No media query for `xs` since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 320px) {
+  .header_title {
+    font-size: 1.25em;
+  }
+  .typedLanguage {
+    width: 180px;
+    height: 45px;
+    line-height: 45px;
+  }
+  .member-name {
+    font-size: 0.85em !important;
+  }
+  .member-major {
+    font-size: 0.75em !important;
+  }
+  .team_descript {
+    font-size: 1em;
+  }
+
+  .card_feature {
+    height: 250px;
+  }
+  .card_feature:hover {
+    height: 320px;
+  }
+  .card_step {
+    height: 310px;
+  }
+  
+}
+@media (min-width: 430px) {
+  .navbar {
+    height: 78px;
+  }
+  .header_title {
+    font-size: 1.7em;
+  }
+  .typedLanguage {
+    width: 210px;
+    height: 50px;
+    line-height: 50px;
+  }
+  .carousel_review .carousel-control {
+    width: 25%;
+  }
+  .title {
+    font-size: 1.7rem;
+  }
+  .notice {
+    transform: translateY(20%);
+  }
+  .name_brand {
+    color: #448cc7;
+    z-index: 0;
+    font-size: 1.1em;
+  }
+  .rounded_btn {
+    padding: 0.5em 1em;
+  }
+  .card_step {
+    height: 276px;
+  }
+  .card_feature:hover {
+    height: 320px;
+  }
+  .footer li {
+    font-size: 0.85em;
+  }
+}
+@media (min-width: 576px) {
+  .navbar {
+    height: 78px;
+  }
+  .navbar-collapse {
+    top: 78px;
+    height: calc(100vh - 78px) !important;
+  }
+  .header {
+    margin-top: 78px;
+  }
+  .section-1 {
+    padding: 8em 4vw 0 4vw;
+  }
+  
+  .section_3 {
+    padding: 10em 0 5em 0;
+  }
+  .small-title {
+    font-size: 1.4rem;
+  }
+  .section_3 .list {
+    margin: 2em;
+    padding: 2em;
+  }
+  .section_3 .list .question_des {
+    font-size: 1em;
+  }
+  .section_3 .list .question {
+    font-size: 1.2em;
+  }
+  .rounded_btn {
+    padding: 0.8em 1em;
+  }
+  .rounded_input {
+    padding: 1.3em;
+  }
+  .notice {
+    transform: translateY(40%);
+  }
+  .team_descript {
+    font-size: 1.5em;
+  }
+  .team_descript img {
+    width: 20%;
+  }
+  .member-name {
+    font-size: 1em !important;
+  }
+  .member-major {
+    font-size: 0.9em !important;
+  }
+  
+  .footer li {
+    font-size: 0.9em;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .rounded_input {
+    border-radius: 45px;
+  }
+  .notice_btn {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    margin: 0 !important;
+  }
+  .header {
+    height: calc(100vh - 78px);
+    max-height: 600px;
+  }
+  .header_title {
+    font-size: 1.3em;
+  }
+  .typedLanguage {
+    width: 165px;
+  }
+  .slider {
+    overflow-x: visible;
+  }
+  .title {
+    font-size: 2rem;
+  }
+
+  .section-1 {
+    padding: 5em 2vw 0 2vw;
+  }
+  .card_group {
+    height: 720px;
+  }
+  .card_feature {
+    height: 250px;
+  }
+  .card_feature:hover {
+    height: 300px;
+  }
+  .section_2 {
+    background-image: url(/assets/img/section2/bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  .carousel_review .carousel-control {
+    display: block;
+  }
+  .carousel_review .carousel-inner {
+    width: 100% !important;
+  }
+  .carousel_review::before {display: none;
+  }
+  .carousel_review::after {display: none;
+  }
+  .section_3 {
+    padding: 10em 0 1em 0;
+  }
+  .section_3 .list .question_des {
+    font-size: 1.6vw;
+  }
+  .section_3 .list .question {
+    font-size: 2.1vw;
+  }
+
+  .carousel_review .carousel-control {
+    width: 45%;
+    display: block;
+  }
+
+  .carousel_review .carousel-indicators {
+    right: 10% !important;
+    bottom: 0 !important;
+    transform: translate(0%, 0%) !important;
+  }
+  .step_wrapper_top {
+    transform: translateY(20%);
+  }
+  .step_wrapper_bottom {
+    transform: translateY(50%);
+    margin-bottom: 40%;
+  }
+  .notice {
+    transform: translateY(5%);
+  }
+  .member-name {
+    font-size: 0.9em !important;
+  }
+  .member-major {
+    font-size: 0.8em !important;
+  }
+  .slick-next {
+    right: -8px;
+    transform: translateY(-100%) translateX(50%);
+  }
+  .slick-prev {
+    left: 8px;
+    transform: translateY(-100%) translateX(-50%);
+  }
+  .slick-arrow {
+    width: 50px !important;
+    height: 50px !important;
+  }
+  .footer li {
+    font-size: 0.85em;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+body {
+  overflow-x: hidden;
+  overflow-y: visible;
+  /* overflow-x: hidden; */
+}
+html {
+  overflow-x: visible;
+}
+::-webkit-scrollbar {
+  width: 15px;
+}
+  .navbar-collapse {
+    position: static;
+    width: fit-content;
+    height: fit-content !important;
+    padding: 0;
+  }
+
+  .navbar-collapse:not(.show) {
+    display: block !important;
+    transform: translateX(0%) !important;
+    animation: none !important;
+  }
+  .name_brand {
+    font-size: 1em;
+  }
+  .header_title {
+    font-size: 1.8em;
+  }
+  .typedLanguage {
+    width: 50%;
+  }
+  .title {
+    font-size: 2.7rem;
+  }
+  .small-title {
+    font-size: 2rem;
+  }
+  .card_group {
+    height: 360px;
+  }
+  .step_table_study {
+    position: absolute;
+    bottom: -30%;
+    left: 0%;
+    width: 30% !important;
+    object-fit: contain;
+  }
+  .about__timeline-container {
+    align-items: center;
+  }
+  .section_3 .list {
+    margin: 3em 2em;
+    padding: 4em 6em;
+  }
+  .section_3 .list .question_des {
+    font-size: 1.2rem;
+  }
+  .section_3 .list .question {
+    font-size: 1.4rem;
+  }
+  .card_step {
+    margin: 0 50px;
+  }
+  .step_wrapper_top {
+    transform: translateY(5%);
+  }
+  .step_wrapper_bottom {
+    transform: translateY(65%);
+  }
+  .carousel_review .carousel-control {
+    width: 25%;
+  }
+
+  .team_descript img {
+    width: 15%;
+  }
+  .slick-next {
+    right: 12px;
+
+    transform: translateY(-100%) translateX(80%);
+  }
+  .slick-prev {
+    left: 12px;
+    transform: translateY(-100%) translateX(-80%);
+  }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .typedLanguage {
+    width: 250px;
+  }
+  .body__about__image {
+    justify-content: flex-end;
+  }
+  .body__about__image img {
+    object-fit: contain;
+  }
+  .footer_descript {
+    font-size: 1em;
+  }
+  .member-name {
+    font-size: 1.1em !important;
+  }
+  .member-major {
+    font-size: 1em !important;
+  }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+}

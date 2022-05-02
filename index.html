@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Loop</title>
+    <!-- fb og -->
+    <meta property="og:title" content="Audio Loop | S-Group ">
+    <meta property="og:url" content="https:/audioloop.org/">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Luyện nghe tiếng anh không còn là trở ngại. Luyện nghe ngoại ngữ nhanh chóng, hiệu quả hơn cùng Audio Loop.
+     ">
+    <meta property="og:image" content="https:/audioloop.org/assets/img/icon_logo/audio_loop.png">
+    <meta property="twitter:title" content="Audio Loop | S-Group ">
+    <meta property="twitter:description" content="Luyện nghe tiếng anh không còn là trở ngại. Luyện nghe ngoại ngữ nhanh chóng, hiệu quả hơn cùng Audio Loop.
+     ">
+    <meta property="twitter:image" content="https:/audioloop.org/assets/img/icon_logo/audio_loop.png">
+    <meta og:locale="vi">
+    <!-- favicon -->
+    <link rel="icon" href="/assets/img/icon_logo/audio_loop.png" type="image/gif" sizes="16x16">
+    <!-- css -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/download-button.css">
+    <link rel="stylesheet" href="/assets/css/responsive.css">
+    <!-- bootstrap css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- slick css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+</head>
+
+<body id="top" onload="loading()">
+    <div id="hideAll" class="hideAll">
+        <li class="loading_box">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+        </li>
+    </div>
+    <!-- navbar -->
+    <nav id="navbar" class="navbar fixed-top bg-white navbar-expand-lg navbar-light vw-100 p-0 ">
+        <div class="container-fluid px-0 bg-white justify-content-between align-items-center">
+            <a class="navbar-brand  d-flex align-items-center " href="#" class="smooth-scroll">
+                <img class="ps-1 ps-sm-3 ps-md-5 logo-brand bg-white" src="/assets/img/icon_logo/audio_loop_white.png"
+                    width="" alt="" />
+                <b id="name_brand" class="animate__animated name_brand">AUDIO LOOP</b>
+            </a>
+            <button class="navbar-toggler  rounded-0 border-0 " type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarToggler" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <div class="animated-icon3"><span></span><span></span><span></span></div>
+                <!-- <span class="navbar-toggler-icon"></span> -->
+            </button>
+            <div class="collapse navbar-collapse" id="navbarToggler">
+                <ul
+                    class="navbar-nav mr-auto w-100 justify-content-center align-items-start align-items-lg-center main-content ">
+                    <li class="nav-item mx-xl-3 nav-active">
+                        <a class="nav-link " href="#home" class="smooth-scroll">Trang Chủ</a>
+                    </li>
+                    <li class="nav-item mx-xl-3 ">
+                        <a class="nav-link " href="#features" class="smooth-scroll">Tính năng chính </a>
+                    </li>
+                    <li class="nav-item mx-xl-3">
+                        <a class="nav-link " href="#howitwork" class="smooth-scroll">Cách sử dụng</a>
+                    </li>
+                    <li class="nav-item mx-xl-3">
+                        <a class="nav-link " href="#FAQs" class="smooth-scroll">Câu hỏi thường gặp</a>
+                    </li>
+                    <!--  <li class="nav-item mx-xl-3 ">
+                        <a class="nav-link " href="#aboutus" class="smooth-scroll">Đội ngũ phát triển</a>
+                    </li>-->
+                    <hr width="40%" class="d-block d-lg-none m-auto my-2">
+                    <li class="my-2 my-lg-0 align-self-center me-3 justify-content-end d-block d-lg-none ">
+                        <div class="dropdown">
+                            <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuLanguage"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="/assets/img/icon_logo/vn-flag.png" alt="" srcset=""> VN
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLanguage">
+                                <li><a class="dropdown-item" href="/" class="smooth-scroll"> <img
+                                            src="/assets/img/icon_logo/vn-flag.png" alt="" srcset=""> VN</a></li>
+                                <!-- <li><a class="dropdown-item" href="/en.html" class="smooth-scroll"> <img
+                                            src="/assets/img/icon_logo/en-flag.png" alt="" srcset=""> EN</a></li>  -->
+                            </ul>
+                        </div>
+                    </li>
+
+                </ul>
+                <li class="my-2 my-lg-0 align-self-center mx-3 me-5 justify-content-end d-none d-lg-block">
+                    <div class="dropdown">
+                        <button class="btn btn-light bg-white dropdown-toggle border " type="button"
+                            id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="/assets/img/icon_logo/vn-flag.png" alt="" srcset=""> VN
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="width:fit-content">
+                            <li><a class="dropdown-item " href="/" class="smooth-scroll"> <img
+                                        src="/assets/img/icon_logo/vn-flag.png" alt="" srcset=""> VN</a></li>
+                            <!--     <li><a class="dropdown-item" href="/en.html" class="smooth-scroll"> <img
+                                        src="/assets/img/icon_logo/en-flag.png" alt="" srcset=""> EN</a></li>-->
+
+                        </ul>
+                    </div>
+                </li>
+            </div>
+
+        </div>
+
+    </nav>
+    <!-- header  -->
+    <div id="home" class="container header py-2">
+        <div class="row">
+            <div class="d-none d-md-flex w-50 justify-content-between position-relative">
+                <img class="w-25" src="/assets/img/section1/sun.png" alt="">
+                <img class="w-50 position-absolute top-50 start-100 translate-middle"
+                    src="/assets/img/section1/cloudy.png" alt="">
+            </div>
+        </div>
+        <div class="row  text-center text-md-start">
+            <div class="col-12 col-md-6 pt-5">
+                <div>
+                    <b class="header_title">
+                        Luyện nghe
+                        <b class="typedLanguage ">
+                            <span id="typedLanguage"> </span>
+                            <img class="fly-icon d-none d-md-block " src="/assets/img/section1/fly.png" alt=""
+                                srcset="">
+                        </b>
+                    </b> <br>
+                    <b class="header_title"> không còn là trở ngại.</b>
+                    <p class="my-3 my-sm-4">
+                        Luyện nghe ngoại ngữ nhanh chóng, hiệu quả hơn cùng Audio Loop.
+                    </p>
+                    <p class="text mt-2 mt-md-3 d-flex align-items-end justify-content-center justify-content-md-start">
+                        <img src="/assets/img/section2/bottom-arrow-icon.png" alt="">
+                        <span> Chần chừ gì nữa, tải ngay nào !.</span>
+                    </p>
+                    <p class="d-flex justify-content-center justify-content-md-start">
+                        <!-- <form name="submit-to-google-sheet" class="position-relative w-100">
+                     <input name="email" type="email" class=" header_input w-100 " placeholder="example@gmail.com">    
+                      
+                    </form>-->
+                        <a style="color: white !important;"
+                            href="https://play.google.com/store/apps/details?id=com.audioloop" target="_blank"
+                            class="animate__animated  animate__swing animate__infinite btn_ggplay">
+                            <img width="40px" data-wow-duration="1s" src="/assets/img/icon_logo/ggplay_square.png"
+                                alt="" srcset=""> <span> Get it on <br> Google Play </span></a>
+
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 m-0 p-0"><img id="headerIMG" class="w-100 h-100 animate__animated "
+                    src="/assets/img/section1/bg-english.png" alt="" srcset="">
+            </div>
+        </div>
+    </div>
+    <!-- end header -->
+
+    <!-- Section 1 Start -->
+    <section id="features" class="section-1   vw-100 container-fluid">
+        <div class="w-100 container">
+            <div class="section__title d-flex title align-items-end col-12">
+                <div class="title__number left-number text-extra-orange" style="border-color: var(--extra-orange)">
+                    01</div>
+                <h2 class="title__text title">Tính Năng Chính</h2>
+            </div>
+        </div>
+        <!-- moblie -->
+        <div class="container list-feature mb-5 d-block d-lg-none">
+            <!-- screen preview -->
+            <div class=" row text mt-5 justify-content-center">
+                <div class="col-12">
+                    <div class="feature_bubble bg-transparent  position-relative ">
+                        <img id="feature_screen" class="feature_screen animate__animated "
+                            src="/assets/img/section1/featuremb0.png" alt="">
+                        <img id="feature_screen" class="feature_screen animate__animated "
+                            src="/assets/img/section1/featuremb1.png" alt="">
+                        <img id="feature_screen" class="feature_screen animate__animated "
+                            src="/assets/img/section1/featuremb2.png" alt="">
+                        <img id="feature_screen" class="feature_screen animate__animated "
+                            src="/assets/img/section1/featuremb3.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- end screen preview -->
+
+            <!-- feature descript -->
+            <div class="feature_descript position-relative">
+                <!-- f0 -->
+                <div class="feature_box">
+                    <div class="card-body feature_body text-center animate__animated" id="slick-slide00_content"
+                        data-line="25">
+                        <h5 class="card-title text-extra-orange d-flex w-100 align-items-end justify-content-center">
+                            <img src="/assets/img/section1/clock-icon.png" alt=""> Lặp
+                        </h5>
+                        <p>Hẹn giờ tắt ứng dụng. Bạn sẽ không phải lo lắng về việc điện thoại của mình sẽ hết pin
+                            khi
+                            luyện
+                            nghe trước khi ngủ.</p>
+                    </div>
+                    <div class="card-body feature_body text-center d-none animate__animated" id="slick-slide01_content"
+                        data-line="50">
+                        <h5 class="card-title text-extra-orange d-flex w-100 align-items-end justify-content-center">
+                            <img src="/assets/img/section1/clock-icon.png" alt=""> Hẹn giờ
+                        </h5>
+                        <p>Hẹn giờ tắt ứng dụng. Bạn sẽ không phải lo lắng về việc điện thoại của mình sẽ hết pin
+                            khi
+                            luyện
+                            nghe trước khi ngủ.</p>
+                    </div>
+                    <div class="card-body feature_body text-center d-none animate__animated" id="slick-slide02_content"
+                        data-line="75">
+                        <h5 class="card-title text-extra-orange d-flex w-100 align-items-end justify-content-center">
+                            <img src="/assets/img/section1/clock-icon.png" alt=""> Ghi chú
+                        </h5>
+                        <p>Hẹn giờ tắt ứng dụng. Bạn sẽ không phải lo lắng về việc điện thoại của mình sẽ hết pin
+                            khi
+                            luyện
+                            nghe trước khi ngủ.</p>
+                    </div>
+                    <div class="card-body feature_body text-center d-none animate__animated" id="slick-slide03_content"
+                        data-line="100">
+                        <h5 class="card-title text-extra-orange d-flex w-100 align-items-end justify-content-center">
+                            <img src="/assets/img/section1/clock-icon.png" alt=""> Chỉnh tốc độ
+                        </h5>
+                        <p>Hẹn giờ tắt ứng dụng. Bạn sẽ không phải lo lắng về việc điện thoại của mình sẽ hết pin
+                            khi
+                            luyện
+                            nghe trước khi ngủ.</p>
+                    </div>
+                    <div id="feature_line" class="line line_animation"></div>
+                </div>
+
+            </div>
+            <!-- end feature descript -->
+        </div>
+        <!-- desktop -->
+        <div class="container d-none d-lg-block section" id="main-feature">
+            <!-- lặp audio -->
+            <div class="section__body">
+                <div class="body__about row">
+                    <div class="body__about__text col-12 col-sm-12 col-md-12 col-lg-12 col-xl-7 col-xxl-7">
+                        <div class="about__title d-flex">
+                            <img src="/assets/img/update-arrows.png" alt="Lap audio" class="icon">
+                            <h3 class="title__text">Lặp Audio</h3>
+                        </div>
+                        <p class="about__descript  my-4">
+                            Bạn có thể lặp một đoạn audio có sẵn trong điện thoại. Audio Loop sẽ giúp bạn tự do chỉnh
+                            sửa số lần lặp của đoạn audio mình mong muốn chỉ với 3 bước cơ bản.
+                        </p>
+                        <div class="about__timeline-container d-flex flex-column">
+                            <div
+                                class="about__timeline__item orange col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xxl-5 align-self-start">
+                                <div class="timeline__item__number">
+                                    <span>1</span>
+                                </div>
+                                <p class="timeline__item__text">
+                                    Chọn Khung Thời Gian
+                                </p>
+                            </div>
+                            <div
+                                class="about__timeline__item  col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xxl-5 align-self-center">
+                                <div class="timeline__item__number">
+                                    <span>2</span>
+                                </div>
+                                <p class="timeline__item__text">
+                                    Chọn Số Lần Lặp
+                                </p>
+                            </div>
+                            <div
+                                class="about__timeline__item col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xxl-5 align-self-end">
+                                <div class="timeline__item__number">
+                                    <span>3</span>
+                                </div>
+                                <p class="timeline__item__text">
+                                    Luyện Nghe Hiệu Quả
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="body__about__image  col-12 col-md-5 d-none d-md-block position-relative  bg-transparent h-100 m-auto">
+                        <img src="/assets/img/section1/p1-right-bg.png" alt="">
+                        <img id="body__about__image" class="animate__animated  body__about__image m-auto"
+                            src="/assets/img/section1/feature11.png" alt="" srcset="">
+                    </div>
+                </div>
+            </div>
+            <!-- end lặp audio -->
+        </div>
+
+
+        <div class="container d-none d-lg-block">
+            <div id="feature_info" class="row align-items-center justify-content-center feature_info box_height">
+                <div class="preview_img  col-12 col-md-5 d-none d-md-flex justify-content-center">
+                    <img class="bg_preview_phone d-block" src="/assets/img/section1/p2-left-bg.png" alt="">
+                    <img id="preview_phone" class="preview_phone animate__animated position-absolute "
+                        src="/assets/img/section1/feature1.png" alt="" srcset="">
+                </div>
+                <div id="main-feature" class="content_description col-12 col-md-7 position-relative">
+                    <div id="box_border" class="box_border"> </div>
+                    <div class=" py-2 px-2 px-md-3 " id="card1">
+                        <div class="card-body">
+                            <h5 class="card-title"> <img src="/assets/img/section1/clock-icon.png" alt=""> Hẹn giờ</h5>
+                            Hẹn giờ tắt ứng dụng. Bạn sẽ không phải lo lắng về việc điện thoại của mình sẽ hết pin khi
+                            luyện
+                            nghe trước khi ngủ.
+                        </div>
+                    </div>
+                    <div class="py-2 px-2 px-md-3" id="card2">
+                        <div class="card-body">
+                            <h5 class="card-title"> <img src="/assets/img/section1/note-icon.png" alt=""> Ghi chú</h5>
+                            Ghi chú trong khi đang nghe. Bạn có thể dễ dàng ghi chú lại những kiến thức mới, những điều
+                            quan
+                            trọng vừa nghe được trong audio.
+                        </div>
+                    </div>
+                    <div class=" py-2 px-2 px-md-3" id="card3">
+                        <div class="card-body">
+                            <h5 class="card-title"> <img src="/assets/img/section1/speed-icon.png" alt=""> Chỉnh tốc độ
+                            </h5>
+                            Tuỳ chỉnh tốc độ của audio. Bạn có thể chình tốc độ nhanh, chậm của audio theo ý thích.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div>
+                <div class="box_height_half" id="feature1">
+
+                </div>
+                <!-- <div class="box_height">
+
+                </div> -->
+                <div class="box_height" id="feature2">
+
+                </div>
+                <!-- <div class="box_height">
+
+                </div> -->
+                <div class="box_height" id="feature3">
+
+                </div>
+                <div class="box_height">
+
+                </div>
+            </div>
+            <!-- moblie -->
+
+        </div>
+        <!-- 3 card hover -->
+        <div class="my-5 card_group">
+            <div class="container">
+                <div class="row justify-content-around text-center gy-5">
+                    <a data-wow-duration="1.3s"
+                        class="card_feature col-9 col-sm-6 col-md-5 col-lg-3 wow   animate__fadeInRight">
+                        <p class="d-flex justify-content-between">
+                            <p><img src="/assets/img/section1/free-icon.png" alt=""></p>
+                            <p>Miễn phí</p>
+                        </p>
+                        <div class="card_feature_descript text">
+                            <p>
+                                Bạn có thể sử dụng tất cả các chức năng của ứng dụng mà không phải tốn khoản phí nào.
+                            </p>
+                        </div>
+                    </a>
+                    <a data-wow-duration="1.3s"
+                        class="card_feature col-9 col-sm-6 col-md-5 col-lg-3  wow  animate__rotateInUpLeft">
+                        <p class="d-flex justify-content-between">
+                            <p><img src="/assets/img/section1/everywhere-icon.png" alt=""></p>
+                            <p>Hoạt Động Ở Mọi Nơi</p>
+                        </p>
+                        <div class="card_feature_descript text">
+                            <p>
+                                Đây là ứng dụng offline. Bạn có thể sử dụng nó ở bất cứ nơi đâu mà không cần kết nối
+                                wifi.
+                            </p>
+                        </div>
+                    </a>
+                    <a data-wow-duration="1.3s"
+                        class="card_feature col-9 col-sm-6 col-md-5 col-lg-3  wow  animate__fadeInLeft">
+                        <p class="d-flex justify-content-between">
+                            <p class="my-3"><img src="/assets/img/section1/mb-icon.png" alt=""></p>
+                            <p class="">Dung Lượng Cực Thấp</p>
+                        </p>
+                        <div class="card_feature_descript text">
+                            <p>
+                                AudioLoop Chỉ Chiếm Dưới 50 MB dung lượng
+                            </p>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section 1 End -->
+
+    <!-- section2 - part 1 cách sử dụng -->
+    <div id="howitwork" class="section_2 pt-md-5 mt-md-5 vw-100 position-relative">
+        <!-- title -->
+        <img class="step_bubble d-none d-md-block" src="/assets/img/section2/bubble.png" alt="">
+
+        <div class="container">
+            <div class="row">
+                <div class="title d-flex align-items-end justify-content-end">
+                    <h2 class="title text-extra-orange text-end">Cách sử dụng </h2>
+                    <span class="right-number text-extra-orange " style="border-color: var(--extra-orange)">02</span>
+                </div>
+            </div>
+            <!-- body -->
+            <div class="row">
+                <!--  small title-->
+                <h3 class="col-12 col-md-6 px-3 py-5 py-md-0 small-title text-dark-blue text-capitalize"> 4 bước <span
+                        class="text-light-orange">
+                        Đơn giản
+                    </span>
+                    để sử dụng Audio Loop
+                </h3>
+            </div>
+            <div class="row   step_wrapper_top justify-content-center justify-content-md-start position-relative ">
+                <!-- content -->
+                <img class=" d-block d-md-none w-75 pb-5 wow animate__slideInLeft" data-wow-duration="1s"
+                    src="/assets/img/section2/study.png" alt="">
+                <img class="step_screen d-none d-lg-block wow animate__slideInRight" data-wow-duration="1s"
+                    src="/assets/img/section2/screen.png" alt="" srcset="">
+                <div class="card_step col-8 col-sm-9 col-md-4 col-lg-3 animate__fadeInRight" data-wow-duration="1s">
+                    <h5 class="step_title">
+                        Chuẩn bị
+                    </h5>
+                    <p class="text">
+                        Tải lên Audio phù hợp với trình độ và sở thích của bạn. Bạn có thể tìm Audio tại Youtube, Google
+                        Podcast, Spotify...
+                    </p>
+                    <div class="opacity-0 d-flex justify-content-around icon_box">
+                        <img class="animate__animated animate__delay-0s animate__faster"
+                            src="/assets/img/section2/youtube.png" alt="" srcset="">
+                        <img class="animate__animated   animate__delay-500ms animate__faster"
+                            src="/assets/img/section2/PodCast.png" alt="" srcset="">
+                        <img class="animate__animated   animate__delay-1s animate__faster"
+                            src="/assets/img/section2/spotlify.png" alt="" srcset="">
+                    </div>
+                    <img data-wow-duration="1s" class="wow animate__fadeIn d-block d-md-none arrow_left"
+                        src="/assets/img/section2/arrow_left.png" alt="" srcset="">
+                </div>
+                <div class="card_step col-8 col-sm-9 col-md-4 col-lg-3 animate__fadeInLeft" data-wow-duration="1s">
+                    <h5 class="step_title">
+                        Nghe, Giải Đề
+                    </h5>
+                    <p class="text">
+                        Nghe toàn bộ audio và ghi chú keyword bằng Audioloop (nếu bạn đang giải đề thì hãy nghe và chọn
+                        đáp án).
+                    </p>
+                    <div class="opacity-0 d-flex justify-content-around icon_box">
+                        <img class="animate__animated  animate__delay-1500ms animate__faster"
+                            src="/assets/img/section2/headphone.png" alt="" srcset="">
+                        <img class="animate__animated   animate__delay-2s animate__faster"
+                            src="/assets/img/section2/pencil.png" alt="" srcset="">
+                        <img class="animate__animated   animate__delay-2500ms animate__faster"
+                            src="/assets/img/section2/book.png" alt="" srcset="">
+                    </div>
+                    <img data-wow-duration="1s" class="wow animate__fadeIn d-block d-md-none arrow_right"
+                        src="/assets/img/section2/arrow_right.png" alt="" srcset="">
+
+                </div>
+            </div>
+            <div class="row  step_wrapper_bottom justify-content-center justify-content-md-end position-relative">
+                <div class="card_step col-8 col-sm-9 col-md-4 col-lg-3 animate__fadeInRight" data-wow-duration="1s">
+                    <h5 class="step_title">
+                        Kiểm tra
+                    </h5>
+                    <p class="text">
+
+                        Hãy kiểm tra lại đáp án sau khi nghe, rồi đọc transcript và ghi chú lại từ vựng mới và khó.
+                    </p>
+                    <div class="opacity-0 d-flex justify-content-around icon_box">
+                        <img class="animate__animated  animate__delay-3s animate__faster"
+                            src="/assets/img/section2/checked.png" alt="" srcset="">
+                        <img class="animate__animated   animate__delay-3500ms animate__faster"
+                            src="/assets/img/section2/100mark.png" alt="" srcset="">
+                        <img class="animate__animated   animate__delay-4s animate__faster"
+                            src="/assets/img/section2/wrong.png" alt="" srcset="">
+                    </div>
+                    <img data-wow-duration="1s" class="wow animate__fadeIn d-block d-md-none arrow_left"
+                        src="/assets/img/section2/arrow_left.png" alt="" srcset="">
+
+                </div>
+                <div class="card_step col-8 col-sm-9 col-md-4 col-lg-3 animate__fadeInLeft" data-wow-duration="1s">
+                    <h5 class="step_title">
+                        Nghe lại
+                    </h5>
+                    <p class="text">
+                        Hãy luyện nghe lại nhiều lần mà không đọc transcript để cải thiện trình độ của bạn tốt hơn.
+                    </p>
+                    <div class="opacity-0 d-flex justify-content-around icon_box">
+                        <img class="animate__animated  animate__delay-4500ms animate__faster"
+                            src="/assets/img/section2/headset.png" alt="" srcset="">
+                        <img class="animate__animated   animate__delay-5s animate__faster"
+                            src="/assets/img/section2/loop.png" alt="" srcset="">
+                        <img class="animate__animated   animate__delay-5500ms animate__faster"
+                            src="/assets/img/section2/increase.png" alt="" srcset="">
+                    </div>
+                </div>
+                <img class="step_table_study d-none d-lg-block  wow animate__slideInLeft" data-wow-duration="1s"
+                    src="/assets/img/section2/study.png" alt="">
+
+            </div>
+        </div>
+
+    </div>
+    <!-- section 2 - part 2 người dùng nói gì về audio loop  -->
+    <div class="section  container mt-3 mt-md-5">
+        <div class="row  justify-content-center align-items-center">
+            <div class="col-12 col-md-6 px-3 py-5 py-md-0 ">
+                <h3 class="small-title  text-dark-blue text-capitalize text-center text-md-start"> <span
+                        class="text-light-orange">Người
+                        dùng</span> nói gì về Audio Loop ?</h3>
+                <p class="text mt-2 mt-md-3 d-flex align-items-end justify-content-center justify-content-md-start">
+                    <img src="/assets/img/section2/bottom-arrow-icon.png" alt="">
+                    <span> Bấm vào đây để trải nghiệm ngay nào !</span>
+                </p>
+                <p class="d-flex justify-content-center justify-content-md-start">
+                    <!-- <form name="submit-to-google-sheet" class="position-relative w-100">
+                     <input name="email" type="email" class=" header_input w-100 " placeholder="example@gmail.com">    
+                      
+                    </form>-->
+                    <a style="color: white !important;"
+                        href="https://play.google.com/store/apps/details?id=com.audioloop" target="_blank"
+                        class="    btn_ggplay">
+                        <img width="40px" data-wow-duration="1s" src="/assets/img/icon_logo/ggplay_square.png" alt=""
+                            srcset=""> <span> Get it on <br> Google Play </span></a>
+
+                </p>
+            </div>
+            <div class="col-12 col-md-6 mt-2  carousel_review">
+                <div id="carousel_review" class="carousel slide position-relative" data-bs-ride="carousel">
+                    <img class="decorate_top_review w-50 d-none d-md-block "
+                        src="/assets/img/section2/decorate_top_review.png" alt="" srcset="">
+                    <div class="carousel-indicators m-0">
+                        <button type="button" data-bs-target="#carousel_review" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carousel_review" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carousel_review" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner  mt-5 mt-md-2">
+                        <div class="wrapper">
+                            <div class="carousel-item active">
+                                <div class="my-3 d-flex justify-content-between">
+                                    <img width="60" height="60"
+                                        src="/assets/img/review_customer/NguyễnThị Lan Anh-01.jpg"
+                                        class=" rounded-circle" alt="...">
+                                    <img class="d-block d-md-none" width="60" src="/assets/img/section2/quote.png"
+                                        alt="" srcset="">
+                                </div>
+                                <p class="about_al"> Audio Loop khiến việc luyện nghe tiếng anh của mình trở nên dễ dàng
+                                    hơn. Với ứng dụng này, mình có thể luyện tập tiếng anh vào bất kỳ lúc nào mình muốn.
+                                </p>
+                                <p class="col-12 col-md-9"><b class="author_name">Nguyễn Thị Lan Anh </b> <br>
+                                    <small class="author_school"> Đại Học Kinh Tế Đà Nẵng</small>
+                                </p>
+
+                            </div>
+                            <div class="carousel-item ">
+                                <div>
+                                    <div class="my-3 d-flex justify-content-between">
+                                        <img width="60" height="60"
+                                            src="/assets/img/review_customer/Ngô Minh Hiếu-01.jpg"
+                                            class=" rounded-circle" alt="...">
+                                        <img class="d-block d-md-none" width="60" src="/assets/img/section2/quote.png"
+                                            alt="" srcset="">
+                                    </div>
+                                    <p class="about_al"> Mình đang sử dụng Audio Loop trong lúc luyện thi Toeic, và kết
+                                        quả kỹ năng nghe của mình có cải thiện rõ rệt. Cảm ơn team Audio Loop nhiều.
+
+                                    </p>
+                                    <p class="col-12 col-md-9"><b class="author_name">Ngô Minh Hiếu</b> <br>
+                                        <small class="author_school"> Đại Học Bách Khoa Đà Nẵng</small>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="carousel-item ">
+                                <div>
+                                    <div class="my-3 d-flex justify-content-between">
+                                        <img width="60" height="60"
+                                            src="/assets/img/review_customer/Lê Thị Thảo Trang-01.jpg"
+                                            class=" rounded-circle" alt="...">
+                                        <img class="d-block d-md-none" width="60" src="/assets/img/section2/quote.png"
+                                            alt="" srcset="">
+                                    </div>
+                                    <p class="about_al">Nhờ có app này mà mình có thể tự tạo các danh sách Audio luyện
+                                        nghe tiếng anh cũng như tùy chỉnh số lần lặp và thời gian theo ý thích. Đặc biệt
+                                        là có thể yên tâm nghe trước khi đi ngủ mà không sợ hết pin với tính năng hẹn
+                                        giờ.
+                                    </p>
+                                    <p class="col-12 col-md-9"><b class="author_name">Lê Thị Thảo Trang</b> <br>
+                                        <small class="author_school"> Đại Học Duy Tân</small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-control">
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel_review"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"> <img class="w-100 h-100"
+                                        src="/assets/img/icon_logo/arrow-icon-prev.png" alt=""></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carousel_review"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"> <img class="w-100 h-100"
+                                        src="/assets/img/icon_logo/arrow-icon-next.png" alt=""></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- section 3 -->
+    <div id="FAQs" class=" section_3 section my-5 container-fluid">
+        <div class=" container">
+            <div class=" justify-content-center d-flex flex-column">
+                <div class="title d-flex align-items-end ">
+                    <span class="left-number">03</span>
+                    <h2 class="title">Câu Hỏi Thường Gặp </h2>
+                </div>
+                <div class="list border-1 shadow-lg bg-white">
+                    <div class="question_box  " onclick="togglePlusMinusIcon(1)" data-bs-toggle="collapse"
+                        href="#question1" role="button" aria-expanded="false" aria-controls="question1">
+                        <p class="d-flex justify-content-between">
+                            <a class="question">
+                                Ứng dụng này có thể sử dụng trong điều kiện không có internet không?
+                            </a>
+                            <span id="plus-minus-icon-1" class="plus-minus-icon "></span>
+                        </p>
+                        <div class="question_des collapse" id="question1">
+                            Ứng dụng hoàn toàn offline, vì vậy trong điều kiện không có mạng vẫn hoạt động bình thường.
+                        </div>
+                    </div>
+                    <div class="question_box  " onclick="togglePlusMinusIcon(2)" data-bs-toggle="collapse"
+                        href="#question2" role="button" aria-expanded="false" aria-controls="question2">
+                        <p class="d-flex justify-content-between">
+                            <a class="question">
+                                Ngoài việc luyện nghe tiếng anh, tôi có thể dùng ứng dụng này để luyện nghe các ngôn ngữ
+                                khác không?
+                            </a>
+                            <span id="plus-minus-icon-2" class="plus-minus-icon  "></span>
+                        </p>
+                        <div class="question_des collapse" id="question2">
+                            Hoàn toàn có thể. Ứng dụng không chỉ phục vụ luyện nghe tiếng anh, mà còn các ngôn ngữ khác.
+                        </div>
+                    </div>
+                    <!-- <div class="question_box  " onclick="togglePlusMinusIcon(3)" data-bs-toggle="collapse"
+                        href="#question3" role="button" aria-expanded="false" aria-controls="question3">
+                        <p class="d-flex justify-content-between">
+                            <a class="question">
+                                Tôi nên dùng ứng dụng kết hợp với luyện nghe ngoại ngữ của mình như thế nào để đạt hiệu
+                                quả cao?
+                            </a>
+                            <span id="plus-minus-icon-3" class="plus-minus-icon  "></span>
+                        </p>
+                        <div class="question_des collapse" id="question3">
+                            Với sự lắng nghe và thấu hiểu, đội ngũ Audio Loop đã chuẩn bị cho bạn một số phương pháp
+                            luyện nghe kết hợp với ứng dụng. Mời bạn xem tại link này 👉 link abcdef
+                        </div>
+                    </div> -->
+                    <div class="question_box  " onclick="togglePlusMinusIcon(4)" data-bs-toggle="collapse"
+                        href="#question4" role="button" aria-expanded="false" aria-controls="question4">
+                        <p class="d-flex justify-content-between ">
+                            <a class="question ">
+                                Tôi thấy ứng dụng có lỗi. Làm thể nào để tôi có thể đóng góp ý kiến cũng như cảm nhận về
+                                ứng dùng?
+                            </a>
+                            <span id="plus-minus-icon-4" class="plus-minus-icon  "></span>
+                        </p>
+                        <div class="question_des collapse" id="question4">
+                            Chúng tôi luôn cố gắng đem đến cho cộng đông những phiên bản tốt nhất. Nhưng nếu bạn gặp
+                            phải vấn đề với ứng dụng, đừng ngừng ngại, hãy gửi cho chúng mình những thông tin chi tiết
+                            thông qua hòm thư <a
+                                href="mailto:audioloop.sgroup@gmail.com"><strong>audioloop.sgroup@gmail.com</strong></a>.
+                            Những đóng góp của bạn sẽ đem lại giá trị lớn cho ứng dụng cũng như cộng đồng
+
+
+                        </div>
+                    </div>
+                </div>
+                <div id="aboutus"></div>
+                <!-- section 4 - đội ngũ phát triển  
+
+                <div id="aboutus" class="title d-flex align-items-end justify-content-end w-100 pt-md-5">
+                    <h2 class="title text-end">Đội ngũ phát triển </h2>
+                    <span class="right-number">04</span>
+                </div>
+                <div
+                    class="team_descript mt-5 text-white  d-flex flex-column flex-md-row justify-content-center justify-content-md-start align-items-center ">
+                    <p class="me-3 my-0">
+                        Chúng tôi đều là thành viên
+                    </p>
+                    <img src="/assets/img/section4/sgroup_badge.png" alt="" srcset="">
+                </div>
+                <div class="slider row  text-white my-3 my-sm-5 justify-content-center container m-auto">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 position-relative my-0 mx-1 mx-sm-3 mx-md-2">
+                        <div class="info-icon d-flex flex-column">
+                            <a class="info-icon-last" target="_blank" href="https://www.facebook.com/dichakhoo"><i
+                                    class="fab fa-facebook-square"></i></a>
+                       
+                        </div>
+                        <img class="info-img" src="/assets/img/member/Diệp Trấn Khôi - App Developer-01.jpg" alt="">
+                        <h6 class="member-name mt-4 ">Diệp Trấn Khôi</h6>
+                        <small class="member-major">App Developer</small>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 position-relative my-0 mx-1 mx-sm-3 mx-md-2">
+                        <div class="info-icon d-flex flex-column">
+                            <a class="info-icon-last" target="_blank" href="https://www.facebook.com/junhaduong"><i
+                                    class="fab fa-facebook-square"></i></a>
+                        
+                        </div>
+                        <img class="info-img" src="/assets/img/member/Dương Hà Bích Thùy - Online Marketer-01.jpg"
+                            alt="">
+                        <h6 class="member-name mt-4 ">Dương Hà Bích Thùy</h6>
+                        <small class="member-major">Online Marketer</small>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 position-relative my-0 mx-1 mx-sm-3 mx-md-2">
+                        <div class="info-icon d-flex flex-column">
+                            <a class="info-icon-last" target="_blank" href="https://www.facebook.com/hovanvydut"><i
+                                    class="fab fa-facebook-square"></i></a>
+                        
+                        </div>
+                        <img class="info-img" src="/assets/img/member/Hồ Văn Vy - Project Manager-01.jpg" alt="">
+                        <h6 class="member-name mt-4 ">Hồ Văn Vy</h6>
+                        <small class="member-major">Project Manager</small>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 position-relative my-0 mx-1 mx-sm-3 mx-md-2">
+                        <div class="info-icon d-flex flex-column">
+                            <a target="_blank" href="https://www.facebook.com/hoaineronam"><i
+                                    class="fab fa-facebook-square"></i></a>
+                            <a target="_blank" href="https://www.linkedin.com/in/nguy%E1%BB%85n-nam-8b87a0176/"> <i class="fab fa-linkedin"></i></a>
+                        </div>
+                        <img class="info-img" src="/assets/img/member/Nguyễn Hoài Nam - UXUI Designer-01.jpg" alt="">
+                        <h6 class="member-name mt-4 ">Nguyễn Hoài Nam</h6>
+                        <small class="member-major">UX/UI Designer</small>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 position-relative my-0 mx-1 mx-sm-3 mx-md-2">
+                        <div class="info-icon d-flex flex-column">
+                            <a class="info-icon-last" target="_blank" href="https://www.facebook.com/profile.php?id=100035393866050"><i
+                                    class="fab fa-facebook-square"></i></a>
+                        
+                        </div>
+                        <img class="info-img" src="/assets/img/member/Nguyễn Hoàng Kim Ngân - UXUI Designer-01.jpg"
+                            alt="">
+                        <p class="member-name mt-4">Nguyễn Hoàng Kim Ngân</p>
+                        <small class="member-major">UX/UI Designer</small>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 position-relative my-0 mx-1 mx-sm-3 mx-md-2">
+                        <div class="info-icon d-flex flex-column">
+                            <a class="info-icon-last" class="info-icon-last" target="_blank" href="https://www.facebook.com/hoangndm99"><i
+                                    class="fab fa-facebook-square"></i></a>
+                         
+                        </div>
+                        <img class="info-img" src="/assets/img/member/Nguyễn Đỗ Minh Hoàng - App Developer-01.jpg"
+                            alt="">
+                        <p class="member-name mt-4">Nguyễn Đỗ Minh Hoàng</p>
+                        <small class="member-major">App Developer</small>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 position-relative my-0 mx-1 mx-sm-3 mx-md-2">
+                        <div class="info-icon d-flex flex-column">
+                            <a class="info-icon-last" target="_blank" href="https://www.facebook.com/profile.php?id=100007935378677"><i
+                                    class="fab fa-facebook-square"></i></a>
+                         
+                        <img class="info-img" src="/assets/img/member/Nguyễn Đắc Phương Hiếu - App Developer-01.jpg"
+                            alt="">
+                        <p class="member-name mt-4">Nguyễn Đắc Phương Hiếu</p>
+                        <small class="member-major">App Developer</small>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 position-relative my-0 mx-1 mx-sm-3 mx-md-2">
+                        <div class="info-icon d-flex flex-column">
+                            <a class="info-icon-last" target="_blank" href="https://www.facebook.com/MinhDong.183"><i
+                                    class="fab fa-facebook-square"></i></a>
+                          
+                        </div>
+                        <img class="info-img" src="/assets/img/member/Lê Bá Minh Đồng - Online Marketer-01.jpg"
+                            alt="">
+                        <p class="member-name mt-4">Lê Bá Minh Đồng</p>
+                        <small class="member-major">Online Marketer</small>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 position-relative my-0 mx-1 mx-sm-3 mx-md-2">
+                        <div class="info-icon d-flex flex-column">
+                            <a class="info-icon-last" target="_blank" href="https://www.facebook.com/pp.0722/"><i
+                                    class="fab fa-facebook-square"></i></a>
+                          
+                        </div>
+                        <img class="info-img" src="/assets/img/member/Trần Thị Phượng - Frontend Developer-01.jpg"
+                            alt="">
+                        <p class="member-name mt-4">Trần Thị Phượng</p>
+                        <small class="member-major">Front-end Developer</small>
+                    </div>
+                </div>
+
+-->
+                <div class="section mt-4 w-100 container">
+                    <div class="row w-100 align-items-center justify-content-center m-0">
+                        <div
+                            class="notice bg-white col-11 col-lg-9 shadow text-center px-2 pt-2 p-md-5 position-relative">
+                            <p class="w-75 m-auto my-3 px-2 text-extra-orange text-capitalize">
+                                Hãy để Audioloop giúp bạn cải thiện việc Luyện nghe !
+                            </p>
+                            <p class="text mt-2 mt-md-3 d-flex align-items-end justify-content-center ">
+                                <img src="/assets/img/section2/bottom-arrow-icon.png" alt="">
+                                <span> Ứng dụng đã có trên Google Play</span>
+                            </p>
+                            <p class="d-flex justify-content-center ">
+                                <!-- <form name="submit-to-google-sheet" class="position-relative w-100">
+                                <input name="email" type="email" class=" header_input w-100 " placeholder="example@gmail.com">    
+                                
+                                </form>-->
+                                <a style="color: white !important;"
+                                    href="https://play.google.com/store/apps/details?id=com.audioloop" target="_blank"
+                                    class="animate__animated  animate__swing animate__infinite btn_ggplay">
+                                    <img width="40px" data-wow-duration="1s"
+                                        src="/assets/img/icon_logo/ggplay_square.png" alt="" srcset=""> <span> Get it on
+                                        <br> Google Play </span></a>
+
+                            </p>
+
+                            <img data-wow-duration="0.7s"
+                                class="wow animate__rotateInUpLeft  position-absolute bottom-0 start-0 d-none d-md-block"
+                                src="/assets/img/footer/tree_left.png" alt="" srcset="">
+                            <img data-wow-duration="0.7s"
+                                class="wow animate__rotateInUpRight  position-absolute bottom-0 end-0 d-none d-md-block"
+                                src="/assets/img/footer/tree_right.png" alt="" srcset="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- end section 4 -->
+        </div>
+    </div>
+    <!-- end section 3 -->
+    <!-- footer -->
+
+    <div class="section footer mt-4 pb-4  container">
+        <div class="row justify-content-center gy-4 ">
+            <div class="col-12 col-md-7 p-2">
+                <div class="d-flex align-items-center justify-content-center justify-content-md-start">
+                    <img src="/assets/img/icon_logo/audio_loop.png" alt="" srcset="">
+                    <b class="al_logo px-3">Audio Loop</b>
+                </div>
+                <p class="px-4 px-md-0 my-4">
+                    Audio Loop là ứng dụng giúp luyện nghe ngoại ngữ thông qua tính năng lặp, làm cho việc học
+                    và
+                    luyện
+                    nghe trở nên dễ dàng.
+                </p>
+                <div class="d-flex flex-wrap align-items-center  justify-content-center justify-content-md-start">
+                    <a style="margin-right:10px !important" class="my-2 col-7 col-sm-5"
+                        href="https://sgroupvn.org/"><img class="w-100" src="/assets/img/icon_logo/sgroup.png" alt=""
+                            srcset=""></a>
+                    <!-- <a style="margin-right:10px !important" class="my-2 col-7 col-sm-5" target="_blank"
+                        href="https://www.producthunt.com/"><img class="w-100"
+                            src="/assets/img/icon_logo/product_hunt.png" alt="" srcset=""></a> -->
+                </div>
+            </div>
+            <div class=" col-12 col-md-5 px-4 px-sm-0 d-flex justify-content-center">
+                <ul
+                    class="w-75 h-100 d-flex flex-column justify-content-center align-items-start px-2 px-sm-3 px-md-0 py-3">
+
+                    <li class="mb-3"> <img class="mx-1 mx-lg-3 " src="/assets/img/footer/mail_icon.png" alt=""
+                            srcset="">
+                        <a style="color: var(--dark-blue) !important;"
+                            href="mailto:audioloop.sgroup@gmail.com">audioloop.sgroup@gmail.com</a>
+                    </li>
+
+                    <li> <img style="padding-left: 3.1px" class="mx-1 mx-lg-3"
+                            src="/assets/img/footer/facebook_icon.png" alt="" srcset=""> <a
+                            style="color: var(--dark-blue) !important;"
+                            href="https://www.facebook.com/audioloop">facebook.com/audioloop</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center justify-content-md-end">
+            <a style="color: var(--dark-blue) !important; margin-right: 50px" href="/term.html"><b>Term & Conditions</b>
+            </a>
+
+            <a style="color: var(--dark-blue) !important" href="/privacy.html">
+                <b>Privacy Policy</b></a>
+        </div>
+    </div>
+    <a class="smooth-scroll scroll-to-top d-none  animate__animated" href="#top"> <i class="fas fa-chevron-up"></i> </a>
+
+    <!-- <button onclick='window.scrollTo({top: 0, behavior: "smooth"});'>Back to Top ↑</button> -->
+</body>
+<!-- bootstrap js-->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+    integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+    crossorigin="anonymous"></script>
+<!-- jquery -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+<!-- slick slider -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="/assets/js/main.js"></script>
+<!-- wow js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<!-- type.js -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+    new WOW().init();
+    var typed = new Typed('#typedLanguage', {
+        strings: [
+            'Tiếng Anh',
+            'Tiếng Anh',
+            'Tiếng Hàn',
+            'Tiếng Nhật',
+        ],
+        smartBackspace: false,
+        stringsElement: null,
+        backDelay: 1000,
+        backSpeed: 80,
+        typeSpeed: 80,
+        startDelay: 0,
+        loop: true,
+        loopCount: Infinity,
+    });
+</script>
+
+</html>

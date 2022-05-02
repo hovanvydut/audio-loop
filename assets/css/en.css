@@ -1,0 +1,73 @@
+/* X-Small devices (portrait phones, less than 576px) */
+/* No media query for `xs` since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 320px) {
+  .typedLanguage {
+    width: 130px;
+  }
+}
+@media (min-width: 320px) {
+  .header_title {
+    font-size: 1.2em;
+  }
+  .typedLanguage {
+    width: 150px;
+    height: 45px;
+    line-height: 45px;
+  }
+}
+@media (min-width: 430px) {
+  .header_title {
+    font-size: 1.4em;
+  }
+  .typedLanguage {
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+  }
+}
+@media (min-width: 576px) {
+  .header_title {
+    font-size: 1.5em;
+  }
+  .typedLanguage {
+    width: 155px;
+    height: 50px;
+    line-height: 50px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  
+  .header_title {
+    font-size: 1.1em;
+  }
+  .typedLanguage {
+    width: 120px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+  .header_title {
+    font-size: 1.5em;
+  }
+  .typedLanguage {
+    width: 35%;
+  }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .typedLanguage {
+    width: 170px;
+  }
+  
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+}
